@@ -94,7 +94,27 @@
 }
 
 .subscribe-email {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 12px;
+
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-email:hover {
+    border-color: rgb(49, 208, 170);
+}
+
+.subscribe-email::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.subscribe-email {
     border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
     border-radius: 4px;
     padding: 8px 16px;
     width: 264px;
@@ -108,5 +128,15 @@
     height: 40px;
     max-width: 165px;
 
+    display: flex;
+    gap: 16px;
     background-color: rgb(77, 90, 229);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.subs-bttn:hover,
+.subs-bttn:focus {
+    background-color: rgb(49, 208, 170);
+}
+
