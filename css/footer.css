@@ -40,6 +40,7 @@
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
 .social-medias-block {
     display: flex;
     flex-direction: column;
@@ -47,7 +48,9 @@
     margin-left: 120px;
 }
 
-.footer-sc-lnk-title {
+.footer-sc-lnk-title,
+.footer-subscribe-title,
+.subs-bttn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -75,4 +78,35 @@
 .footer-social-media-link:hover,
 .footer-social-media-link:focus {
     background-color: rgb(49, 208, 170);
+}
+
+.footer-subscribe-block {
+    margin-left: auto;
+}
+
+.subscribe-form {
+    margin-top: 16px;
+}
+
+.subscribe-form form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-email {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+}
+
+.subs-bttn {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    max-width: 165px;
+
+    background-color: rgb(77, 90, 229);
 }
