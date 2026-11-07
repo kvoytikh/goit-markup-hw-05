@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+     color: rgb(46, 47, 66);
     background-color: rgb(231, 233, 252);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -54,7 +55,7 @@
 .modal-close-bttn:hover,
 .modal-close-bttn:focus{
     background-color: #404BBF;
-    fill: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .modal-title {
@@ -99,12 +100,18 @@
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 40px;
+    width: 100%;
+    padding: 11px 38px;
     max-width: 360px;
     min-height: 40px;
     color: rgb(67, 68, 85);
 
     font-family: inherit;
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-item[name="comment"] {
@@ -130,8 +137,6 @@
 .input-wrapper {
     position: relative;
     width: 100%;
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-item:focus {
@@ -139,12 +144,7 @@
 }
 
 .input-wrapper:focus-within .form-icon {
-    fill: #404BBF;
-}
-
-.form-item {
-    width: 100%;
-    padding: 11px 38px;
+    fill: rgb(77, 90, 229);
 }
 
 .form-icon {
@@ -152,6 +152,7 @@
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    color: rgb(46, 47, 66);
 }
 
 .privacy-policy-checkbox{
@@ -177,6 +178,9 @@
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-checkbox_icon {
